@@ -1,1 +1,47 @@
-Sign Up!
+<div class="signup-content container">
+  <div class="push-5 span-14">
+    <h1>Sign Up!</h1>
+    <h5>It"s quick, easy and free</h5>
+
+    <% unless params.valid? %>
+      <div class="error">
+        <ul>
+          <% params.errors.each do |error| %>
+            <li><%= error.attribute_name %> is invalid</li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <%=
+      form_for :user, routes.users_path do |f|
+        div class: "field full" do
+          label :name
+          text_field :name
+        end
+
+        div class: "field full" do
+          label :email
+          text_field :email
+        end
+
+        div class: "field full" do
+          label :username
+          text_field :username
+        end
+
+        div class: "field inline half" do
+          label :password
+          password_field :password
+        end
+
+        div class: "field inline half" do
+          label "Re-enter password", for: :password_confirmation
+          password_field :password_confirmation
+        end
+
+        submit "Sign Up"
+      end
+    %>
+  </div>
+</div>
