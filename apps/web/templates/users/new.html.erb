@@ -14,7 +14,7 @@
     <% end %>
 
     <%=
-      form_for :user, routes.users_path do |f|
+      form_for :user, routes.users_path do
         div class: "field full" do
           label :name
           text_field :name
@@ -35,7 +35,7 @@
           password_field :password
         end
 
-        div class: "field inline half" do
+        div class: "field inline last half" do
           label "Re-enter password", for: :password_confirmation
           password_field :password_confirmation
         end
