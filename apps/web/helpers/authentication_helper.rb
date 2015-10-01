@@ -6,6 +6,12 @@ module Web
         @current_user = user
       end
 
+      def require_login(&failure)
+        unless logged_in?
+          failure.call
+        end
+      end
+
       def current_user
         @current_user || login_from_session
       end
