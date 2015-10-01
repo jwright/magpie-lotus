@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'OpenSansRegular';
+  font-style: 'normal';
+  font-weight: 'normal';
+  src: url('/fonts/OpenSans.eot');
+  src: url('/fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/OpenSans.ttf') format('truetype'),
+       url('/fonts/OpenSans.svg#ChunkFiveRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  font-style: 'normal';
+  font-weight: 'bold';
+  src: url('/fonts/OpenSans-Bold.eot');
+  src: url('/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/OpenSans-Bold.ttf') format('truetype'),
+       url('/fonts/OpenSans-Bold.svg#ChunkFiveRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  font-style: 'normal';
+  font-weight: 'bold';
+  src: url('/fonts/ProximaNova-Extrabld.eot');
+  src: url('/fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/ProximaNova-Extrabld.otf') format('opentype'),
+       url('/fonts/ProximaNova-Extrabld.ttf') format('truetype'),
+       url('/fonts/ProximaNova-Extrabld.svg#ChunkFiveRegular') format('svg');
+}

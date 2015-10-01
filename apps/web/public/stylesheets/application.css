@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'OpenSansRegular';
+  font-style: 'normal';
+  font-weight: 'normal';
+  src: url("/fonts/OpenSans.eot");
+  src: url("/fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("/fonts/OpenSans.ttf") format("truetype"), url("/fonts/OpenSans.svg#ChunkFiveRegular") format("svg"); }
+@font-face {
+  font-family: 'OpenSansBold';
+  font-style: 'normal';
+  font-weight: 'bold';
+  src: url("/fonts/OpenSans-Bold.eot");
+  src: url("/fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/OpenSans-Bold.ttf") format("truetype"), url("/fonts/OpenSans-Bold.svg#ChunkFiveRegular") format("svg"); }
+@font-face {
+  font-family: 'ProximaNovaBold';
+  font-style: 'normal';
+  font-weight: 'bold';
+  src: url("/fonts/ProximaNova-Extrabld.eot");
+  src: url("/fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Extrabld.otf") format("opentype"), url("/fonts/ProximaNova-Extrabld.ttf") format("truetype"), url("/fonts/ProximaNova-Extrabld.svg#ChunkFiveRegular") format("svg"); }
+body {
+  background-color: #ea5625;
+  background-image: url("/images/bird.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right -145px bottom -140px;
+  font-family: 'OpenSansRegular'; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.padded {
+  padding: 20px 0; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    color: #fff; }
+
+.body-content {
+  border-top: solid 1px #c53f20;
+  padding-top: 50px;
+  clear: both;
+  text-align: left; }
+  .body-content h1 {
+    font-size: 6em;
+    text-transform: lowercase;
+    text-shadow: 2px 2px #6f2f14;
+    color: #fff;
+    font-family: 'ProximaNovaBold';
+    letter-spacing: -3px;
+    margin-bottom: 0px; }
+  .body-content h5 {
+    font-size: 1.8em;
+    color: #6f2f14;
+    padding-bottom: 20px;
+    font-family: 'OpenSansBold'; }
+
+.display label {
+  display: block;
+  color: #6f2f14;
+  font-weight: normal; }
+.display .field {
+  border: solid 1px #6f2f14;
+  background: #6f2f14;
+  color: #ea5625;
+  font-size: 16px;
+  padding: 10px; }
+
+form label {
+  display: block;
+  color: #6f2f14;
+  font-weight: normal; }
+form .actions {
+  border-top: solid 1px #6f2f14;
+  padding-top: 10px; }
+  form .actions a.cancel {
+    padding-left: 30px; }
+form .field.inline {
+  float: left;
+  padding-right: 20px; }
+  form .field.inline.last {
+    float: right; }
+form .field.last {
+  padding-bottom: 10px; }
+form .field input {
+  width: 95%; }
+form .field textarea {
+  width: 91%; }
+form .field.half {
+  width: 45%; }
+
+input[type=text], input[type=password], textarea, a.btn {
+  border: solid 1px #6f2f14;
+  background: #6f2f14;
+  color: #ea5625;
+  font-size: 16px;
+  padding: 10px; }
+
+button[type=submit], input[type=submit] {
+  border: solid 1px #6f2f14;
+  background: #6f2f14;
+  color: #fff;
+  padding: 10px 20px; }
+
+span.fileupload {
+  background: #6f2f14;
+  color: #ea5625;
+  font-size: 40px;
+  padding: 0 15px;
+  vertical-align: middle; }
+
+div.fileupload {
+  position: relative;
+  overflow: hidden; }
+  div.fileupload label {
+    display: inline;
+    padding-left: 10px; }
+  div.fileupload input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+
+.header-content {
+  clear: both;
+  height: 105px; }
+  .header-content .authentication {
+    line-height: 105px;
+    height: 105px;
+    padding: 0 20px;
+    font-size: 16px; }
+  .header-content .profile .profile-name {
+    padding-left: 20px; }
+  .header-content .profile .signout {
+    font-size: 12px;
+    line-height: 1em;
+    margin-top: -40px; }
+  .header-content img {
+    vertical-align: middle; }
+
+.wishlist-sidebar-list h2 {
+  color: #6f2f14;
+  border-bottom: solid 1px #6f2f14;
+  opacity: 0.8;
+  width: 80%; }
+.wishlist-sidebar-list ul {
+  margin: 0;
+  padding: 0; }
+  .wishlist-sidebar-list ul li {
+    list-style-type: none;
+    list-style-position: inside;
+    font-family: 'OpenSansBold';
+    font-size: 1.2em;
+    border-bottom: solid 1px #6f2f14;
+    width: 80%;
+    padding: 10px 0;
+    position: relative; }
+    .wishlist-sidebar-list ul li .count {
+      position: absolute;
+      right: 0px; }
+    .wishlist-sidebar-list ul li a {
+      color: #6f2f14; }
+      .wishlist-sidebar-list ul li a:hover {
+        text-decoration: none; }
+      .wishlist-sidebar-list ul li a.active {
+        color: #fff; }
+    .wishlist-sidebar-list ul li.new {
+      display: none; }
+      .wishlist-sidebar-list ul li.new input[type=text] {
+        background: #ea5625;
+        border: none;
+        border-bottom: solid 1px #fff;
+        color: #fff;
+        font-size: 0.8em;
+        width: 86%; }
+
+.list-index-content .welcome h5, .list-show-content .welcome h5 {
+  padding-bottom: 0px; }
+.list-index-content .welcome img, .list-show-content .welcome img {
+  margin-top: -35px;
+  margin-left: -30px; }
+
+.wishlist-items {
+  padding-top: 50px; }
+  .wishlist-items .item {
+    float: left;
+    border-bottom: solid 1px #6f2f14;
+    padding: 10px 5px;
+    width: 40%;
+    overflow: auto;
+    margin-left: 20px; }
+    .wishlist-items .item:nth-child(1), .wishlist-items .item:nth-child(2) {
+      border-top: solid 1px #6f2f14; }
+    .wishlist-items .item a {
+      color: #000; }
+    .wishlist-items .item .name {
+      font-family: 'OpenSansBold';
+      float: left; }
+    .wishlist-items .item .price {
+      float: right; }
+    .wishlist-items .item .add {
+      opacity: 0.4; }
+      .wishlist-items .item .add a {
+        color: #000; }
+
+.wishlist-item h1 {
+  padding-bottom: 50px; }
+.wishlist-item .name {
+  float: left;
+  color: #fff;
+  font-family: 'OpenSansBold'; }
+.wishlist-item .price {
+  float: right;
+  font-family: 'OpenSansBold'; }
+.wishlist-item .description {
+  padding-top: 20px;
+  color: #fff; }
+.wishlist-item img {
+  border: solid 4px #fff; }
+
+/*# sourceMappingURL=application.css.map */
