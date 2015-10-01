@@ -1,0 +1,31 @@
+<div class="header-content">
+  <div class="left">
+    <%=
+      link_to "", routes.lists_path do
+        img src: "/images/birdhouse-with-text.png"
+      end
+    %>
+  </div>
+
+  <div class='right authentication'>
+    <% if logged_in? %>
+      <div class='profile'>
+        <div class='left'>
+          <%=
+            link_to "", routes.user_path(current_user.id) do
+              img src: "/images/empty-profile.png"
+            end
+          %>
+        </div>
+        <div class='left profile-name'>
+          <%= link_to current_user.name, routes.user_path(current_user.id) %>
+          <div class='signout'><%= link_to 'Sign Out', routes.signout_path %></div>
+        </div>
+      </div>
+    <% elsif params.env["REQUEST_PATH"] == '/signin' %>
+      <%= link_to 'Sign Up', routes.signup_path %>
+    <% else %>
+      <%= link_to 'Sign In', routes.signin_path %>
+    <% end %>
+  </div>
+</div>

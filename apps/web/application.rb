@@ -17,6 +17,7 @@ module Web
       #
       load_paths << [
         'controllers',
+        'helpers',
         'views'
       ]
 
@@ -193,6 +194,7 @@ module Web
       # See: http://www.rubydoc.info/gems/lotus-view#Configuration
       view.prepare do
         include Lotus::Helpers
+        include Web::Helpers::Authentication
       end
     end
 
