@@ -23,6 +23,11 @@ module Web
       def login_from_session
         UserRepository.find session[:user_id] if session[:user_id]
       end
+
+      def logout!
+        @current_user = nil
+        session[:user_id] = nil
+      end
     end
   end
 end

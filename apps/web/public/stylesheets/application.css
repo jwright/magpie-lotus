@@ -109,6 +109,14 @@ button[type=submit], input[type=submit] {
   color: #fff;
   padding: 10px 20px; }
 
+button.link-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; }
+  button.link-button:hover {
+    border-bottom: solid 1px #fff; }
+
 span.fileupload {
   background: #6f2f14;
   color: #ea5625;

@@ -55,6 +55,17 @@ button[type=submit], input[type=submit] {
   padding: 10px 20px;
 }
 
+button.link-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    border-bottom: solid 1px $color-white;
+  }
+}
+
 span.fileupload {
   background: $color-burnt-orange;
   color: $color-orange;

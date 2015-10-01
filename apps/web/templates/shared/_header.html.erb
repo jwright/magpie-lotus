@@ -19,7 +19,13 @@
         </div>
         <div class='left profile-name'>
           <%= link_to current_user.name, routes.user_path(current_user.id) %>
-          <div class='signout'><%= link_to 'Sign Out', routes.signout_path %></div>
+          <div class='signout'>
+            <%=
+              form_for :sessions, routes.signout_path, method: :delete do |f|
+                submit 'Sign Out', class: 'link-button'
+              end
+            %>
+          </div>
         </div>
       </div>
     <% elsif params.env["REQUEST_PATH"] == '/signin' %>
