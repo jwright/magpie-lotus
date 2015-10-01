@@ -1,7 +1,7 @@
 <div class="signup-content container">
   <div class="push-5 span-14">
     <h1>Sign Up!</h1>
-    <h5>It"s quick, easy and free</h5>
+    <h5>It's quick, easy and free</h5>
 
     <% unless params.valid? %>
       <div class="error">
@@ -40,7 +40,9 @@
           password_field :password_confirmation
         end
 
-        submit "Sign Up"
+        div class: "actions clear" do
+          submit "Sign Up"
+        end
       end
     %>
   </div>
