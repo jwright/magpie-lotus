@@ -16,6 +16,7 @@ module Web::Controllers::Users
     def call(params)
       if params.valid?
         @user = UserRepository.create User.new(params[:user])
+        auto_login @user
         redirect_to routes.lists_path
       end
     end
