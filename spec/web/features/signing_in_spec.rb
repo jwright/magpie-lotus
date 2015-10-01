@@ -5,6 +5,7 @@ describe "Signing in" do
 
   describe "on successful signin" do
     before { UserRepository.persist user }
+    after { UserRepository.clear }
 
     it "redirects to the lists" do
       visit "/signin"
