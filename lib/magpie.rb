@@ -35,12 +35,16 @@ Lotus::Model.configure do
   # Alternatively, you can use a block syntax like the following:
   #
   mapping do
-    # collection :users do
-    #   entity     User
-    #   repository UserRepository
-    #
-    #   attribute :id,   Integer
-    #   attribute :name, String
-    # end
+    collection :users do
+      entity     User
+      repository UserRepository
+
+      attribute :id,                Integer
+      attribute :name,              String
+      attribute :email,             String
+      attribute :username,          String
+      attribute :crypted_password,  String
+      attribute :salt,              String
+    end
   end
 end.load!
