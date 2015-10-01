@@ -4,9 +4,20 @@ module Web::Controllers::Users
 
     expose :user
 
+    params do
+      param :user do
+        param :email, presence: true, format: /@/
+        param :username, presence: true
+        param :name, presence: true
+        param :password, presence: true, confirmation: true
+      end
+    end
+
     def call(params)
-      @user = UserRepository.create User.new(params[:user])
-      redirect_to routes.lists_path
+      if params.valid?
+        @user = UserRepository.create User.new(params[:user])
+        redirect_to routes.lists_path
+      end
     end
   end
 end
